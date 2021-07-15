@@ -19,6 +19,8 @@ a{
    margin-left: 0.5em;
 }
 .btn-primary{
+    display: inline-block;
+    width:150px;
     background-color: #F77F00;
 }
 .btn-secondary{
@@ -160,10 +162,20 @@ h2{
 /************************About Me***********************/
 #about{
     background-color: #EAE2B7;
+    margin-top: 0;
 }
 .about-text{
     font-size: 22px;
     font-weight: 400;
     max-width: 600px;
 }
-/******************* Services **************************/
+/******************* Interested **************************/
+#interested{
+    color:#fff;
+    background: url("../images/interested.jpg");
+    background: linear-gradient(to right,rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url("../images/interested.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px;
+}
