@@ -1,1 +1,97 @@
 /* Your styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********************REUSEABLE*********************/
+a{
+    text-decoration: none;
+}
+.btn{
+    color:#fff;
+    margin: 2em 2em 0 0;
+    padding: 0.5em;
+}
+.btn img{
+   margin-left: 0.5em;
+}
+.btn-primary{
+    background-color: #F77F00;
+}
+.btn-secondary{
+    border:  1px solid #F77F00;
+}
+/*********************HEADER*********************/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    max-height: 50px;
+    position: sticky;
+    top:0;
+}
+#logo{
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#fff;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+
+/***********NAVBAR*********/
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    margin-right:3em ;
+}
+
+nav ul li{
+    margin-left: 2em;
+}
+nav ul li a{
+    color:#fff;
+    font-weight: 400;
+}
+
+/*********************HERO*********************/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    background: url("../images/hero-bg.jpg");
+    background: linear-gradient(to right,rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)),url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.hero img{
+    margin-top: -4.2em;
+}
+.hero-text h1, .hero-text p:first-child{
+    display: inline;
+}
+
+.hello{
+    font-size: 40px;
+    font-weight: 300;
+}
+h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+#based{
+    font-size: 30px;
+    font-weight: 300;
+}
+
