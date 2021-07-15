@@ -1,1 +1,169 @@
 /* Your styles go here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********************REUSEABLE*********************/
+a{
+    text-decoration: none;
+}
+.btn{
+    color:#fff;
+    margin: 2em 2em 0 0;
+    padding: 0.5em;
+}
+.btn img{
+   margin-left: 0.5em;
+}
+.btn-primary{
+    background-color: #F77F00;
+}
+.btn-secondary{
+    border:  1px solid #F77F00;
+}
+.section-title{
+   color:#000;
+   background-color: #FCBF49; 
+   font-weight:400;
+   font-size: 14px;
+   text-align: center;
+   max-width: fit-content;
+   margin: 0.5em auto 0.5em auto;
+   padding: 0.3em;
+}
+.section-subtitle{
+   font-weight: 500;
+   font-size: 24px;
+   text-align: center;
+   margin: 0 auto 0.5em auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2em 2.5em;
+    padding: 0.3em;
+}
+.underlined-text{
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+}
+.underlined-text::after{
+    position: absolute;
+    content: '';
+    height:3px;
+    bottom:-2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #F77F00;
+    
+}
+h4{
+    font-weight: 500;
+    font-size: 28;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:0.5em;
+    margin:0.5em;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+}
+
+.card p{
+    font-size:small;
+}
+
+/*********************HEADER*********************/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    max-height: 50px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+#logo{
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#fff;
+    text-transform: uppercase;
+    margin-left: 2em;
+}
+
+/***********NAVBAR*********/
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    margin-right:3em ;
+}
+
+nav ul li{
+    margin-left: 2em;
+}
+nav ul li a{
+    color:#fff;
+    font-weight: 400;
+}
+
+/*********************HERO*********************/
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+    background: url("../images/hero-bg.jpg");
+    background: linear-gradient(to right,rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)),url("../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#hero img{
+    margin-top: -4.2em;
+}
+.hero-text h1, .hero-text p:first-child{
+    display: inline;
+}
+
+.hello{
+    font-size: 40px;
+    font-weight: 300;
+}
+h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+#based{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/************************About Me***********************/
+#about{
+    background-color: #EAE2B7;
+}
+.about-text{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 600px;
+}
+/******************* Services **************************/
