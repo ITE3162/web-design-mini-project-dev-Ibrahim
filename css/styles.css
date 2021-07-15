@@ -19,10 +19,17 @@ a{
    margin-left: 0.5em;
 }
 .btn-primary{
+    display: inline-block;
+    width:150px;
+    border: 0;
     background-color: #F77F00;
 }
 .btn-secondary{
     border:  1px solid #F77F00;
+}
+.padding-top{
+    padding-top: 50px ;
+    padding-bottom: 20px;
 }
 .section-title{
    color:#000;
@@ -44,7 +51,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.2em 2.5em;
+    margin: 0 2.5em;
     padding: 0.3em;
 }
 .underlined-text{
@@ -55,13 +62,16 @@ a{
 .underlined-text::after{
     position: absolute;
     content: '';
-    height:3px;
+    height:2px;
     bottom:-2px;
     margin: 0 auto;
     left: 0;
     right: 0;
     background: #F77F00;
     
+}
+h3::after{
+    max-width: 5%;
 }
 h4{
     font-weight: 500;
@@ -74,7 +84,7 @@ h4{
     justify-content: center;
     text-align: center;
     padding:0.5em;
-    margin:0.5em;
+    margin:0 0.5em;
 }
 .card img{
     width: 50px;
@@ -111,7 +121,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     align-items: flex-start;
-    margin-right:3em ;
+    margin-right:8em ;
 }
 
 nav ul li{
@@ -138,7 +148,7 @@ nav ul li a{
     overflow: hidden;
 }
 #hero img{
-    margin-top: -4.2em;
+    margin-top: -7em;
 }
 .hero-text h1, .hero-text p:first-child{
     display: inline;
@@ -158,12 +168,103 @@ h2{
 }
 
 /************************About Me***********************/
-#about{
+#About{
     background-color: #EAE2B7;
+    margin-top: 0;
 }
 .about-text{
     font-size: 22px;
     font-weight: 400;
     max-width: 600px;
 }
-/******************* Services **************************/
+/************************About Me***********************/
+#Services{
+    background-color: #F2F2F2;
+}
+/******************* Interested **************************/
+#interested{
+    color:#fff;
+    background: url("../images/interested.jpg");
+    background: linear-gradient(to right,rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url("../images/interested.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 200px;
+}
+
+/********************Contact me***********************/
+#Contact{
+    color: #fff;
+    background-color: #003049;
+}
+
+.contact-title{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.contact-text{
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 0;
+}
+textarea{
+    max-width: 455px;
+    max-height: 162px;
+    resize:none;
+}
+#contact-form button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size :14px;
+    max-height: 50px;
+    max-width: 100px;
+}
+#contact-form input, #contact-form textarea{
+    font-weight: 400;
+    font-size: 18px;
+    width: 350px;
+    border: 0;
+    border-bottom: 2px solid #F2F2F2;
+    padding: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color:#fff;
+    background-color: #003049;
+}
+#contact-form input:focus, #contact-form textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #F77F00;
+}
+
+.flex-container-cl{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 40%;
+    margin-right: 5em;
+    padding-bottom: 1em;
+}
+#social-links{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+#social-links li{
+    margin-right: 2em;
+}
+#social-links li a{
+    display: inline-block;
+    color:#ccc;
+    font-size: 30px;
+}
+
+
+#social-links li a:hover{
+    color:#D62828;
+}
