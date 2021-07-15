@@ -21,6 +21,7 @@ a{
 .btn-primary{
     display: inline-block;
     width:150px;
+    border: 0;
     background-color: #F77F00;
 }
 .btn-secondary{
@@ -120,7 +121,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     align-items: flex-start;
-    margin-right:3em ;
+    margin-right:8em ;
 }
 
 nav ul li{
@@ -147,7 +148,7 @@ nav ul li a{
     overflow: hidden;
 }
 #hero img{
-    margin-top: -4.2em;
+    margin-top: -7em;
 }
 .hero-text h1, .hero-text p:first-child{
     display: inline;
@@ -200,13 +201,44 @@ h2{
 
 .contact-title{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .contact-text{
     font-weight: 300;
-    font-size: 30px;
+    font-size: 24px;
     margin-top: 0;
+}
+textarea{
+    max-width: 455px;
+    max-height: 162px;
+    resize:none;
+}
+#contact-form button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size :14px;
+    max-height: 50px;
+    max-width: 100px;
+}
+#contact-form input, #contact-form textarea{
+    font-weight: 400;
+    font-size: 18px;
+    width: 350px;
+    border: 0;
+    border-bottom: 2px solid #F2F2F2;
+    padding: 0.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color:#fff;
+    background-color: #003049;
+}
+#contact-form input:focus, #contact-form textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #F77F00;
 }
 
 .flex-container-cl{
@@ -215,4 +247,24 @@ h2{
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 40%;
+    margin-right: 5em;
+    padding-bottom: 1em;
+}
+#social-links{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+#social-links li{
+    margin-right: 2em;
+}
+#social-links li a{
+    display: inline-block;
+    color:#ccc;
+    font-size: 30px;
+}
+
+
+#social-links li a:hover{
+    color:#D62828;
 }
