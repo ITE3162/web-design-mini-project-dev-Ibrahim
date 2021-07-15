@@ -24,6 +24,45 @@ a{
 .btn-secondary{
     border:  1px solid #F77F00;
 }
+.section-title{
+   color:#000;
+   background-color: #FCBF49; 
+   font-weight:400;
+   font-size: 14px;
+   text-align: center;
+   max-width: fit-content;
+   margin: 0.5em auto 0.5em auto;
+   padding: 0.3em;
+}
+.section-subtitle{
+   font-weight: 500;
+   font-size: 24px;
+   text-align: center;
+   margin: 0 auto 0.5em auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2em 2.5em;
+    padding: 0.3em;
+}
+.underlined-text{
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+}
+.underlined-text::after{
+    position: absolute;
+    content: '';
+    height:3px;
+    bottom:-2px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #F77F00;
+    
+}
 /*********************HEADER*********************/
 header{
     display: flex;
@@ -34,13 +73,14 @@ header{
     max-height: 50px;
     position: sticky;
     top:0;
+    z-index: 10;
 }
 #logo{
     font-weight: 700;
     font-size: 1.5em;
     color:#fff;
     text-transform: uppercase;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 /***********NAVBAR*********/
@@ -62,7 +102,7 @@ nav ul li a{
 
 /*********************HERO*********************/
 
-.hero{
+#hero{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +115,7 @@ nav ul li a{
     background-size: cover;
     overflow: hidden;
 }
-.hero img{
+#hero img{
     margin-top: -4.2em;
 }
 .hero-text h1, .hero-text p:first-child{
@@ -95,3 +135,12 @@ h2{
     font-weight: 300;
 }
 
+/************************About Me***********************/
+#about{
+    background-color: #EAE2B7;
+}
+.about-text{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 600px;
+}
