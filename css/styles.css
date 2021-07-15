@@ -268,3 +268,10 @@ textarea{
 #social-links li a:hover{
     color:#D62828;
 }
+/************************************COPYRIGHT *************************/
+
+#copy{
+    color: #F2F2F2;
+    background-color: #000;
+    min-height: 150px;
+}
