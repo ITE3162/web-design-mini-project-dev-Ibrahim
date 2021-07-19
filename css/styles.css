@@ -1,5 +1,8 @@
 /* Your styles go here */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,6 +17,7 @@ a{
     color:#fff;
     margin: 2em 2em 0 0;
     padding: 0.5em;
+    transition: all 500ms;
 }
 .btn img{
    margin-left: 0.5em;
@@ -23,9 +27,18 @@ a{
     width:150px;
     border: 0;
     background-color: #F77F00;
+    
+}
+.btn-primary:hover{
+    transform: scale(1.1);
+    background-color: #D62828;
 }
 .btn-secondary{
     border:  1px solid #F77F00;
+}
+.btn-secondary:hover{
+    text-decoration: underline;
+    border:  1px solid #D62828;
 }
 .padding-top{
     padding-top: 50px ;
@@ -130,6 +143,10 @@ nav ul li{
 nav ul li a{
     color:#fff;
     font-weight: 400;
+    transition: all 300ms;
+}
+nav ul li a:hover{
+    color:#D62828;
 }
 
 /*********************HERO*********************/
@@ -235,6 +252,7 @@ textarea{
     margin-bottom: 0.5em;
     color:#fff;
     background-color: #003049;
+    transition: all 500ms;
 }
 #contact-form input:focus, #contact-form textarea:focus{
     outline: none;
@@ -262,9 +280,27 @@ textarea{
     display: inline-block;
     color:#ccc;
     font-size: 30px;
+    transition: all 500ms;
 }
 
 
 #social-links li a:hover{
+    transform: scale(1.1);
+    color:#D62828;
+}
+/************************************COPYRIGHT *************************/
+
+#copy{
+    color: #F2F2F2;
+    background-color: #000;
+    min-height: 150px;
+}
+.copy-text p{
+    font-weight:300;
+    font-size: 18px;
+}
+#ftlogo{
+    text-transform: uppercase;
+    font-weight: 700;
     color:#D62828;
 }
